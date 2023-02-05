@@ -161,7 +161,33 @@ top: 130px;
 left: 110px;
 
 }
+footer{
+  height: 80vh;
+  background-color: #58549E;
+}
+footer h1{
+  font-size: 2.6em;
+  position: relative;
+  bottom: 180px;
+  text-align: center;
+  color: white;
+}
+.foot{
+  position: relative;
+  top: -62px;
+}
+.social{
+  position: relative;
+  bottom: 180px;
 
+  display: flex;
+  justify-content: center;
+}
+.social a{
+  color: white;
+  font-size: 2.6em;
+  margin: 20px;
+}
 @media (max-width:600px) {
   main{
     height: 71vh;
@@ -247,5 +273,29 @@ font-size: 80px;
     text-align: center;
     font-size: 15px;
   }
-
+  footer{
+    height: 60vh;
+    background-color: #58549E;
+  }
+  footer h1{
+    font-size: 2.6em;
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+    color: white;
+  }
+  .foot{
+    position: relative;
+    top: -62px;
+  }
+  .social{
+    display: flex;
+    justify-content: center;
+  }
+  .social a{
+    color: white;
+    font-size: 2.6em;
+    margin: 10px;
+  }
+  
 }

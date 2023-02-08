@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Noto Naskh Arabic', serif;
+/* font-family: 'Poppins', sans-serif; */
+  background-color:#EDEDED;
+direction: rtl;
+}
+main{
+  padding-top: 50px;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: normal;
+  align-content: normal;
+  overflow: auto;
+  width: 20%;
+  height: 100vh;
+  background-color: #58549E;
+  position: sticky;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+main a{
+  position: relative;
+/* right: 30px; */
+transition: background .05s;
+  /* margin-top: 30px; */
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+main a:hover{
+  background-color:  #ecf8ee;
+  color: black;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: normal;
+  align-content: normal;
+}
+#frist-btn{
+  background-color:  #6ebe81;
+
+  margin-top: 30px;
+}
+/* .flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(5) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(6) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(7) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+} */
+#clicked{
+  background-color:  #6ebe81;
+}
+header{
+  direction: ltr;
+  display: flex;
+  justify-content: space-between;
+}
+header a{
+  margin: 5px 7px;
+  color: black;
+  font-size: 1.9em;
+}
+@media (max-width:600px){
+  main{
+    width: 60%;
+    display: none;
+  }
+  main a{
+    font-size: 26px;
+  }
+  #ex{
+    position: relative;
+    z-index: 3;
+    display: none;
+  }
+  #frist-btn{
+    background-color:  #6ebe81;
+  }
+  
+}

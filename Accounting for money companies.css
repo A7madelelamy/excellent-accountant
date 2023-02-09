@@ -35,6 +35,7 @@ transition: background .05s;
   text-decoration: none;
   color: white;
   font-size: 2em;
+  padding: auto 100%;
 }
 main a:hover{
   background-color:  #ecf8ee;

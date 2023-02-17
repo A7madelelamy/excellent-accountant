@@ -9,6 +9,10 @@ body{
   background-color:#EDEDED;
 direction: rtl;
 }
+header{
+  direction: ltr;
+
+}
 main{
   padding-top: 50px;
   direction: rtl;
@@ -130,7 +134,7 @@ header a{
   font-size: 1.9em;
 }
 section{
-  border-left: solid 0.4px rgb(102, 93, 93);
+  /* border-left: solid 0.4px rgb(102, 93, 93); */
   margin-top: 30px;
   margin-right: 20%;
   width: 70%;
@@ -162,6 +166,17 @@ section a{
   margin-top: 70px;
   background-color: #5954b8a4;
 }
+.logo a img{
+  /* border: solid 2px red; */
+  object-fit:contain ;
+  
+  position: relative;
+  bottom: 40px;
+  left: 30px;
+  width: 30%;
+  /* height: 120px; */
+}
+
 .highlight h1{
 
   font-size: 1.4em;
@@ -187,7 +202,7 @@ section a{
 
 @media (max-width:600px){
   main{
-    position: sticky;
+    position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
@@ -222,6 +237,7 @@ section a{
     padding: 10px;
   
   }
+  
   #btn-two{
     position: relative;
     right: 60%;
@@ -230,5 +246,12 @@ section a{
     position: relative;
     left: 20%;
   }
+  .logo a img{
+    position: relative;
+    top:-30.9px;
+    left: -6px;
+    width: 80%;
+  }
+
   
 }

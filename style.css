@@ -8,6 +8,15 @@ body{
  background-color:#EDEDED;
  direction: rtl;
 }
+.logo a img{
+  /* border: solid 2px red; */
+  object-fit:contain ;
+  position: relative;
+  bottom: 40px;
+  left: 30px;
+  width: 30%;
+}
+
 .menu{
   display: none;
 }
@@ -22,6 +31,8 @@ header a{
   text-decoration: none;
   font-size: 1.8em;
   margin: 20px;
+}
+.logo{
 }
 .main-flex a{
   font-weight: 500;
@@ -192,6 +203,13 @@ footer h1{
   main{
     height: 71vh;
   }
+  .logo a img{
+    position: relative;
+    /* bottom: 40px; */
+    left: 60px;
+    width: 80%;
+  }
+  
   .header-btn{
     display: none;
   }
@@ -265,7 +283,6 @@ font-size: 80px;
 
     padding: 10px 10px;
   }
-
   .main-flex p{
     text-align: center;
     font-size: 15px;

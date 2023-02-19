@@ -13,8 +13,6 @@ header{
   direction: ltr;
 
 }
-
-
 main{
   padding-top: 50px;
   direction: rtl;
@@ -200,38 +198,6 @@ section a{
   margin-top: 30px;
   margin-right: 30px;
   /* border-bottom: solid 0.1px rgb(48, 45, 45); */
-}
-.father{
-  display: none;
-  background-color: #58549e7c;
-  position: fixed;
-  top: -10;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.child{
-  margin-right: 2%;
-  padding: 30px 0;
-  width: 96%;
-  background-color: #58549E;
-  color: white;
-  position: relative;
-  top: 74%;
-}
-.child h3{
-  font-size: 2em;
-  text-align: center;
-}
-.child p{
-  text-align: center;
-
-  font-size: 22px;
-}
-.child a{
-  color: #ffffff;
-  font-size: 2em;
-  background: none;
 }
 
 @media (max-width:600px){

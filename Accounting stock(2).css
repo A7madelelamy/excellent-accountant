@@ -13,6 +13,8 @@ header{
   direction: ltr;
 
 }
+
+
 main{
   padding-top: 50px;
   direction: rtl;
@@ -54,7 +56,6 @@ main a:hover{
   align-content: normal;
 }
 #frist-btn{
-  background-color:  #6ebe81;
 
   margin-top: 30px;
 }
@@ -199,6 +200,38 @@ section a{
   margin-right: 30px;
   /* border-bottom: solid 0.1px rgb(48, 45, 45); */
 }
+.father{
+  display: none;
+  background-color: #58549e7c;
+  position: fixed;
+  top: -10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.child{
+  margin-right: 2%;
+  padding: 30px 0;
+  width: 96%;
+  background-color: #58549E;
+  color: white;
+  position: relative;
+  top: 74%;
+}
+.child h3{
+  font-size: 2em;
+  text-align: center;
+}
+.child p{
+  text-align: center;
+
+  font-size: 22px;
+}
+.child a{
+  color: #ffffff;
+  font-size: 2em;
+  background: none;
+}
 
 @media (max-width:600px){
   main{
@@ -210,6 +243,12 @@ section a{
     width: 60%;
     display: none;
   }
+  section img{
+    position: relative;
+    left: 10px;
+    width: 98%;
+  }
+  
   main a{
     font-size: 26px;
   }
@@ -217,9 +256,6 @@ section a{
     position: relative;
     z-index: 3;
     display: none;
-  }
-  #frist-btn{
-    background-color:  #6ebe81;
   }
   section{
     border-left: solid 0.4px rgb(102, 93, 93);

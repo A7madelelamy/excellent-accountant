@@ -28,7 +28,7 @@ main{
   width: 20%;
   height: 100vh;
   background-color: #58549E;
-  position: sticky;
+  position: fixed;
   right: 0;
   top: 0;
   bottom: 0;

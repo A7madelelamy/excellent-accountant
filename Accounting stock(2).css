@@ -9,11 +9,16 @@ body{
   background-color:#EDEDED;
 direction: rtl;
 }
+p{
+  margin: 0 3px;
+}
 header{
   direction: ltr;
 
 }
-
+span{
+  font-size: 13px;
+}
 
 main{
   padding-top: 50px;

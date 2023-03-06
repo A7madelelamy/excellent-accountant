@@ -16,6 +16,12 @@ header{
   direction: ltr;
 
 }
+.onei{
+  margin-bottom: 0;
+}
+.twoi{
+  margin-top: -11px;
+}
 span{
   font-size: 13px;
 }

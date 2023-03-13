@@ -4,6 +4,24 @@ const main = document.getElementById("main");
 const dad = document.getElementById("dad");
 const xmark = document.getElementById("xmark");
 const darkmode = document.getElementById("darkmode");
+const dateH = new Date().getHours();
+
+if (dateH>="18"||dateH<="6") {
+  console.log("DARK MODE Run!");
+
+  const element = document.body;
+  dad.style.display='none';
+menu.classList.toggle("dark-mode-menu");
+  element.classList.toggle("dark-mode");
+  main.classList.toggle("dark-mode-main");
+  dad.style.display='none';
+
+
+  
+}else{
+  console.log(dateH);
+  setTimeout(dadRun, 5000);
+}
 
 menu.addEventListener("click",
 function () {
@@ -23,7 +41,7 @@ function () {
 
 }
 );
-setTimeout(dadRun, 5000);
+
 
 function dadRun() {
   dad.style.display="flex";

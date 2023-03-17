@@ -5,11 +5,11 @@ const dad = document.getElementById("dad");
 const xmark = document.getElementById("xmark");
 const darkmode = document.getElementById("darkmode");
 const last = document.getElementById("last");
+const lastText = document.getElementById("lastText");
 
 const dateH = new Date().getHours();
 
 // fucation dark mode
-
 function darkModeRun() {
   console.log("DARK MODE Run!");
 
@@ -87,3 +87,6 @@ menu.classList.toggle("dark-mode-menu");
   last.classList.toggle("dark-mode-last");
 }
 darkmode.addEventListener("click",dark);
+
+// lastText
+lastText.innerHTML="من محاضرات كلية التجارة جامعة بنها";

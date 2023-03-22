@@ -16,6 +16,9 @@ header{
   direction: ltr;
 
 }
+.one{
+  padding: 30px 30px;
+}
 .onei{
   margin-bottom: 0;
 }
@@ -167,8 +170,9 @@ section a{
 
 }
 #btn-two{
-  position: relative;
-  right: 63%;
+  float: left;
+  /* position: relative;
+  right: 63%; */
 }
 .highlight{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -335,7 +339,7 @@ padding:  7px 20%;
 
 }
 
-@media (max-width:600px){
+@media (max-width:703px){
   main{
     position: fixed;
     right: 0;
@@ -377,16 +381,22 @@ padding:  7px 20%;
   }
   
   #btn-two{
-    position: relative;
-    right: 60%;
+    float: left;
+
+    /* position: relative;
+    right: 60%; */
   }
   #btn-one{
-    position: relative;
-    left: 20%;
+    float: right;
+
+    /* position: relative;
+    left: 20%; */
   }
   .logo a img{
+    height: 80px;
     position: relative;
-    top:-30.9px;
+    bottom: 0;
+    top:-10.9px;
     left: -6px;
     width: 80%;
   }
@@ -427,6 +437,12 @@ padding:  7px 20%;
     color: black;
     font-size: 2.5em;
   }
-  
+  #menu{
+    position: relative;
+    top: 10px;
+  }
+  .one h1{
+    font-size: 40px;
+  }
   
 }

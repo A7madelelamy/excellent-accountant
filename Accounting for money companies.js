@@ -24,7 +24,7 @@ menu.classList.toggle("dark-mode-menu");
 }
 function darkModeOff() {
   console.log("the darkmode off");
-  setTimeout(dadRun, 5000);
+  // setTimeout(dadRun, 5000);
 }
 
 

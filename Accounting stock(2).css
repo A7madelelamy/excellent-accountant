@@ -9,6 +9,12 @@ body{
   background-color:#EDEDED;
 direction: rtl;
 }
+#darkt{
+
+  position: relative;
+  right: 270px;
+  top: 8px;
+}
 p{
   margin: 20px 0px;
 }
@@ -28,6 +34,7 @@ header{
 span{
   font-size: 13px;
 }
+
 
 main{
   padding-top: 50px;
@@ -282,6 +289,7 @@ background-color: #ffffffc9;
   color: black;
   font-size: 2.5em;
 }
+
 .last-page{
 
   background-image: url(9a846aca1d6fbccca0f691e7859f5af7.jpg);
@@ -339,7 +347,18 @@ padding:  7px 20%;
 
 }
 
+.dark-mode-btn{
+  color: rgb(255, 255, 255);
+}
+
 @media (max-width:703px){
+  #darkt{
+    /* color: #000000; */
+    position: relative;
+    right:auto;
+    top: 8px;
+  }
+  
   main{
     position: fixed;
     right: 0;
@@ -436,6 +455,12 @@ padding:  7px 20%;
     bottom: 90px;
     color: black;
     font-size: 2.5em;
+  }
+  #darkt{
+    /* color: #000000; */
+    position: relative;
+    right: auto;
+    top: 8px;
   }
   #menu{
     position: relative;

@@ -6,27 +6,35 @@ const xmark = document.getElementById("xmark");
 const darkmode = document.getElementById("darkmode");
 const last = document.getElementById("last");
 const lastText = document.getElementById("lastText");
+let darkt = document.getElementById("darkt");
 
 const dateH = new Date().getHours();
 
 // fucation dark mode
 function darkModeRun() {
   console.log("DARK MODE Run!");
-
   const element = document.body;
   dad.style.display='none';
 menu.classList.toggle("dark-mode-menu");
   element.classList.toggle("dark-mode");
   main.classList.toggle("dark-mode-main");
+  darkt.classList.toggle("dark-mode-menu");
+
   dad.style.display='none';
 
+  // darkt.style.color ='black';
 
 }
 function darkModeOff() {
+
   console.log("the darkmode off");
   // setTimeout(dadRun, 5000);
 }
 
+// darkmode-btn
+
+
+// darkt.addEventListener("click",darkModeRun);
 
 // menu 
 
@@ -48,24 +56,24 @@ function menuClose() {
 }
 
 
-if (dateH>="18"||dateH<="6") {
+// if (dateH>="18"||dateH<="6") {
 
-   darkModeRun();
-//   console.log("DARK MODE Run!");
+//    darkModeRun();
+// //   console.log("DARK MODE Run!");
 
-//   const element = document.body;
-//   dad.style.display='none';
-// menu.classList.toggle("dark-mode-menu");
-//   element.classList.toggle("dark-mode");
-//   main.classList.toggle("dark-mode-main");
-//   dad.style.display='none';
+// //   const element = document.body;
+// //   dad.style.display='none';
+// // menu.classList.toggle("dark-mode-menu");
+// //   element.classList.toggle("dark-mode");
+// //   main.classList.toggle("dark-mode-main");
+// //   dad.style.display='none';
 
 
   
-}else{
+// }else{
   
-  darkModeOff();
-}
+//   darkModeOff();
+// }
 
 menu.addEventListener("click",menuOpen);
 ex.addEventListener("click",menuClose);
@@ -79,6 +87,8 @@ xmark.addEventListener("click",function () {
   dad.style.display='none';
 });
 function dark() {
+  darkt.classList.toggle("dark-mode-menu");
+
   const element = document.body;
   dad.style.display='none';
 menu.classList.toggle("dark-mode-menu");
@@ -86,7 +96,21 @@ menu.classList.toggle("dark-mode-menu");
   main.classList.toggle("dark-mode-main");
   last.classList.toggle("dark-mode-last");
 }
-darkmode.addEventListener("click",dark);
+
+let darkCookie = ()=>{
+if (document.cookie =="darkmode=off"){
+  document.cookie = "darkmode=on; expires=Thu, 18 Dec 2030 12:00:00 UTC; path=/";
+  dark();
+}else{
+  document.cookie = "darkmode=off; expires=Thu, 18 Dec 2030 12:00:00 UTC; path=/";
+
+  
+
+}
+}
+  
+darkt.addEventListener("click",darkCookie);
+
 
 // lastText
 lastText.innerHTML="من محاضرات كلية التجارة جامعة بنها";

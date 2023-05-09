@@ -15,6 +15,9 @@ direction: rtl;
   right: 270px;
   top: 8px;
 }
+section h1{
+  font-size: 2em;
+}
 p{
   margin: 20px 0px;
 }

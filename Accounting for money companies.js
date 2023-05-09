@@ -10,7 +10,8 @@ let darkt = document.getElementById("darkt");
 
 const dateH = new Date().getHours();
 
-// fucation dark mode
+//change img logo
+//  // fucation dark mode
 function darkModeRun() {
   console.log("DARK MODE Run!");
   const element = document.body;

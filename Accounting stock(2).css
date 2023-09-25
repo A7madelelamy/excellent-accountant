@@ -50,6 +50,7 @@ main{
   align-content: normal;
   overflow: auto;
   width: 20%;
+  
   height: 100vh;
   background-color: #58549E;
   position: fixed;
@@ -57,6 +58,10 @@ main{
   top: 0;
   bottom: 0;
 }
+main img{
+  width: 100px;
+}
+
 main a{
   position: relative;
 /* right: 30px; */
@@ -183,6 +188,62 @@ section a{
   float: left;
   /* position: relative;
   right: 63%; */
+}
+#whatsAppAD-grandpa{
+  display: none;
+  position:fixed;
+  top: 0%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 72;
+}
+.whatsAppAD-father{
+
+  background-color: #edededa9;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+}
+#closeAD{
+
+  position: absolute;
+  color: black;
+  top: 70px;
+  right: 22px;
+  font-size: 1.6em;
+}
+.whatsAppAD-child{
+  text-align: center;
+  background-color:#ffffff;
+  height: 60vh;
+width: 90%;
+border-radius: 20px;
+border: solid 2px black;
+
+}
+.whatsAppAD-child img{
+  position: relative;
+  top: 10px;
+  width: 60px;
+}
+#btnW{
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  top: 10vh;
+  color: rgb(255, 255, 255);
+  font-size: 1.4em;
+  background-color: #58549e;
+  background-color: #6ebe81;
+  border: solid 1px black;
+font-weight: 600;
+  border-radius: 40px;
+  padding: 5px 60px;
 }
 .highlight{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -363,14 +424,27 @@ padding:  7px 20%;
   }
   
   main{
+    text-align: center;
     position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
   
-    width: 60%;
+    width: 100%;
     display: none;
   }
+  main a{
+    position: relative;
+  /* right: 30px; */
+  transition: background .05s;
+    /* margin-top: 30px; */
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    padding: auto 100%;
+    margin-top: 7px;
+  }
+  
   section img{
     position: relative;
     left: 10px;
@@ -415,12 +489,12 @@ padding:  7px 20%;
     left: 20%; */
   }
   .logo a img{
-    height: 80px;
+    height: 119px;
     position: relative;
     bottom: 0;
     top:-10.9px;
     left: -6px;
-    width: 80%;
+    width: 88%;
   }
   .dad{
     display: none;

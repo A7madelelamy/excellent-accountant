@@ -7,7 +7,22 @@ const darkmode = document.getElementById("darkmode");
 const last = document.getElementById("last");
 const lastText = document.getElementById("lastText");
 let darkt = document.getElementById("darkt");
+const whatsAppAD = document.getElementById("whatsAppAD-grandpa");
+const closeAD = document.getElementById("closeAD");
 
+const whatsAppADF = ()=>{
+  whatsAppAD.style.display="block";
+
+}
+setTimeout(whatsAppADF,5000);
+
+const whatsAppADClose = ()=>{
+  whatsAppAD.style.display="none";
+
+}
+
+
+closeAD.addEventListener("click",whatsAppADClose);
 const dateH = new Date().getHours();
 
 //change img logo
@@ -117,19 +132,3 @@ darkt.addEventListener("click",darkCookie);
 lastText.innerHTML="من محاضرات كلية التجارة جامعة بنها";
 
 
-const whatsAppAD = document.getElementById("whatsAppAD-grandpa");
-const closeAD = document.getElementById("closeAD");
-
-const whatsAppADF = ()=>{
-  whatsAppAD.style.display="block";
-
-}
-setTimeout(whatsAppADF,5000);
-
-const whatsAppADClose = ()=>{
-  whatsAppAD.style.display="none";
-
-}
-
-
-closeAD.addEventListener("click",whatsAppADClose)
